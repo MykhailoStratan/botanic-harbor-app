@@ -1,0 +1,227 @@
+[
+    {
+        "name": "Monstera Deliciosa",
+        "imagePath": "monstera.png",
+        "price": "$25",
+        "rating": 4.7,
+        "favourite": true,
+        "hint": "Bright, indirect sunlight is ideal.",
+        "type": "Foliage",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 70,
+            "light": "Indirect",
+            "watering": "Weekly"
+        }
+    },
+    {
+        "name": "Snake Plant",
+        "imagePath": "snake-plant.png",
+        "price": "$18",
+        "rating": 4.5,
+        "favourite": false,
+        "hint": "Low light tolerant, water sparingly.",
+        "type": "Succulent",
+        "preferences": {
+            "humidity": "Low",
+            "temperature": 65,
+            "light": "Low",
+            "watering": "Every 2-3 weeks"
+        }
+    },
+    {
+        "name": "Spider Plant",
+        "imagePath": "spider-plant.png",
+        "price": "$12",
+        "rating": 4.2,
+        "favourite": true,
+        "hint": "Well-draining soil, moderate sunlight.",
+        "type": "Air Purifying",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 75,
+            "light": "Moderate",
+            "watering": "Regular"
+        }
+    },
+    {
+        "name": "Fiddle Leaf Fig",
+        "imagePath": "fiddle-leaf-fig.png",
+        "price": "$35",
+        "rating": 4.0,
+        "favourite": false,
+        "hint": "Bright, filtered light; water when top inch is dry.",
+        "type": "Tree",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 72,
+            "light": "Bright",
+            "watering": "When dry"
+        }
+    },
+    {
+        "name": "Pothos",
+        "imagePath": "pothos.png",
+        "price": "$15",
+        "rating": 4.8,
+        "favourite": true,
+        "hint": "Easy-care, can tolerate low light conditions.",
+        "type": "Trailing",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 68,
+            "light": "Low to moderate",
+            "watering": "When soil feels dry"
+        }
+    },
+    {
+        "name": "Peace Lily",
+        "imagePath": "peace-lily.png",
+        "price": "$20",
+        "rating": 4.6,
+        "favourite": false,
+        "hint": "Keep soil evenly moist, avoid direct sunlight.",
+        "type": "Flowering",
+        "preferences": {
+            "humidity": "High",
+            "temperature": 70,
+            "light": "Low to moderate",
+            "watering": "Regular"
+        }
+    },
+    {
+        "name": "Jade Plant",
+        "imagePath": "jade-plant.png",
+        "price": "$22",
+        "rating": 4.3,
+        "favourite": true,
+        "hint": "Bright light, water when soil is dry.",
+        "type": "Succulent",
+        "preferences": {
+            "humidity": "Low",
+            "temperature": 75,
+            "light": "Bright",
+            "watering": "When dry"
+        }
+    },
+    {
+        "name": "Aloe Vera",
+        "imagePath": "aloe-vera.png",
+        "price": "$14",
+        "rating": 4.4,
+        "favourite": false,
+        "hint": "Bright light, water sparingly.",
+        "type": "Medicinal",
+        "preferences": {
+            "humidity": "Low",
+            "temperature": 65,
+            "light": "Bright",
+            "watering": "Every 2-3 weeks"
+        }
+    },
+    {
+        "name": "Rubber Plant",
+        "imagePath": "rubber-plant.png",
+        "price": "$28",
+        "rating": 4.1,
+        "favourite": true,
+        "hint": "Indirect light, allow top inch of soil to dry.",
+        "type": "Foliage",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 70,
+            "light": "Indirect",
+            "watering": "When dry"
+        }
+    },
+    {
+        "name": "ZZ Plant",
+        "imagePath": "zz-plant.png",
+        "price": "$30",
+        "rating": 4.9,
+        "favourite": false,
+        "hint": "Low light, water every few weeks.",
+        "type": "Easy Care",
+        "preferences": {
+            "humidity": "Low",
+            "temperature": 68,
+            "light": "Low",
+            "watering": "Every 2-3 weeks"
+        }
+    },
+    {
+        "name": "Hoya",
+        "imagePath": "hoya.png",
+        "price": "$18",
+        "rating": 4.5,
+        "favourite": true,
+        "hint": "Bright light, allow soil to dry between waterings.",
+        "type": "Climbing",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 72,
+            "light": "Bright",
+            "watering": "When dry"
+        }
+    },
+    {
+        "name": "Calathea",
+        "imagePath": "calathea.png",
+        "price": "$24",
+        "rating": 4.2,
+        "favourite": false,
+        "hint": "Filtered light, keep soil consistently moist.",
+        "type": "Exotic",
+        "preferences": {
+            "humidity": "High",
+            "temperature": 75,
+            "light": "Indirect",
+            "watering": "Regular"
+        }
+    },
+    {
+        "name": "Dieffenbachia",
+        "imagePath": "dieffenbachia.png",
+        "price": "$16",
+        "rating": 4.0,
+        "favourite": true,
+        "hint": "Bright, indirect light; water moderately.",
+        "type": "Foliage",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 70,
+            "light": "Indirect",
+            "watering": "Regular"
+        }
+    },
+    {
+        "name": "Fern",
+        "imagePath": "fern.png",
+        "price": "$20",
+        "rating": 4.8,
+        "favourite": false,
+        "hint": "High humidity, bright indirect light.",
+        "type": "Indoor",
+        "preferences": {
+            "humidity": "High",
+            "temperature": 68,
+            "light": "Indirect",
+            "watering": "Regular"
+        }
+    },
+    {
+        "name": "Boston Ivy",
+        "imagePath": "boston-ivy.png",
+        "price": "$26",
+        "rating": 4.6,
+        "favourite": true,
+        "hint": "Climbing vine, bright light; water when top inch is dry.",
+        "type": "Climbing",
+        "preferences": {
+            "humidity": "Moderate",
+            "temperature": 70,
+            "light": "Bright",
+            "watering": "When dry"
+        }
+    }
+]

@@ -1,5 +1,6 @@
-
-import './App.css'
+import plants from './database/plants.json';
+import './App.css';
+import CarouselItem from './components/CarouselItem/CarouselItem';
 
 function App() {
     return (
@@ -47,7 +48,10 @@ function App() {
                 </menu>
                 <div className="content-carousel">
                     <ul>
-                        <li className="content-carousel-item">
+                        {plants.map((plant, index) => {
+                            return <CarouselItem {...plant} key={index+Date()}/>
+                        })}
+                        {/* <li className="content-carousel-item">
                             <div className="carousel-item-card">
                                 <button className="carousel-item-save"><img src="/heart-filled-icon.svg" alt="" /></button>
                                 <div className="carousel-item-image">
@@ -94,7 +98,7 @@ function App() {
                                 <h3 className="description-plant-name">Caladium plants</h3>
                                 <p className="description-plant-hint">It needs watering once a week</p>
                             </div>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </main>

@@ -36,7 +36,7 @@ menu {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -79,12 +79,12 @@ button {
 .navigation-item p {
   display: none;
 }
-
+/* 
 .card-description {
-  /* display: none; */
-}
+  display: none;
+} */
 
-.card-description h3 {
+/* .card-description h3 {
   margin: 0;
   padding-top: 0.87rem;
   color: #2B2B2B;
@@ -102,15 +102,15 @@ button {
   font-weight: 400;
   line-height: normal;
 
-}
+} */
 
 .content-carousel ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.carousel-item-card {
+/* .carousel-item-card {
   position: relative;
   width: 13rem;
   height: 17rem;
@@ -134,9 +134,9 @@ button {
   position: absolute;
   margin: 0;
   /* bottom: 0;
-  right: 0; */
-}
-
+  right: 0; 
+} */
+/* 
 .carousel-item-price {
   color: #2A2A2A;
   font-size: 0.875rem;
@@ -170,23 +170,22 @@ button {
   bottom: 1.3rem;
   right: 1rem;
   font-size: 0.625rem;
-}
+} */
 
 .rating-image {
   width: 0.625rem;
   height: 0.625rem;
-}
+} */
 
 .menu-filter {
   margin: 0;
-  padding-left: 1.2rem;
-  /* padding-right: 1.2rem;
-  /* margin-bottom: 2.5rem; */
+
+  /* margin-bottom: 2.5rem;
 }
 
 .content-container {
   margin: 0;
-  
+  height: 100vh;
   /* margin-bottom: 2.5rem; */
 }
 
@@ -223,6 +222,8 @@ button {
   align-items: center;
   flex-wrap: nowrap;
   gap: 0.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
@@ -255,6 +256,7 @@ button {
   position: fixed;
   top: 3rem;
   right: -9rem;
+  z-index: 10;
 }
 
 .utilities {
@@ -281,10 +283,16 @@ button {
   height: 2.5rem;
 }
 
+.header-slogan {
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
 .header-slogan-img-container {
   /* position: absolute;
   right: 0; */
-  transform: translate(-280%, 25%);
+  transform: translate(-320%, 0%);
   display: inline-block;
   width: 2rem;
   height: 3rem;
@@ -304,7 +312,7 @@ button {
   display: flex;
   flex-direction: column;
   
-  width: 70%;
+  width: 80%;
   padding-left: 1.2rem;
   padding-top: 3.2rem;
 }
