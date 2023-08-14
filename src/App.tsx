@@ -1,6 +1,8 @@
 import plants from './database/plants.json';
+import navItems from './database/navItems.json';
 import './App.css';
-import CarouselItem from './components/CarouselItem/CarouselItem';
+import Carousel from './components/Carousel/Carousel';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 
 function App() {
     return (
@@ -46,64 +48,10 @@ function App() {
                         <li className="menu-filter-item"><button className="menu-filter-item-button">Succulents</button></li>
                     </ul>
                 </menu>
-                <div className="content-carousel">
-                    <ul>
-                        {plants.map((plant, index) => {
-                            return <CarouselItem {...plant} key={index+Date()}/>
-                        })}
-                        {/* <li className="content-carousel-item">
-                            <div className="carousel-item-card">
-                                <button className="carousel-item-save"><img src="/heart-filled-icon.svg" alt="" /></button>
-                                <div className="carousel-item-image">
-                                    <img src="/plants/plant-5.png" alt="" />
-                                </div>
-                                <p className="carousel-item-price">$27.5</p>
-                                <p className="carousel-item-rating">
-                                    <img src="/star-icon.svg" alt="" className="rating-image" />3.4
-                                </p>
-                            </div>
-                            <div className="card-description">
-                                <h3 className="description-plant-name">Caladium plants</h3>
-                                <p className="description-plant-hint">It needs watering once a week</p>
-                            </div>
-                        </li>
-                        <li className="content-carousel-item">
-                            <div className="carousel-item-card">
-                                <button className="carousel-item-save"><img src="/heart-filled-icon.svg" alt="" /></button>
-                                <div className="carousel-item-image">
-                                    <img src="/plants/plant-2.jpg" alt="" />
-                                </div>
-                                <p className="carousel-item-price">$27.5</p>
-                                <p className="carousel-item-rating">
-                                    <img src="/star-icon.svg" alt="" className="rating-image" />3.4
-                                </p>
-                            </div>
-                            <div className="card-description">
-                                <h3 className="description-plant-name">Caladium plants</h3>
-                                <p className="description-plant-hint">It needs watering once a week</p>
-                            </div>
-                        </li>
-                        <li className="content-carousel-item">
-                            <div className="carousel-item-card">
-                                <button className="carousel-item-save"><img src="/heart-filled-icon.svg" alt="" /></button>
-                                <div className="carousel-item-image">
-                                    <img src="/plants/plant-6.png" alt="" />
-                                </div>
-                                <p className="carousel-item-price">$27.5</p>
-                                <p className="carousel-item-rating">
-                                    <img src="/star-icon.svg" alt="" className="rating-image" />3.4
-                                </p>
-                            </div>
-                            <div className="card-description">
-                                <h3 className="description-plant-name">Caladium plants</h3>
-                                <p className="description-plant-hint">It needs watering once a week</p>
-                            </div>
-                        </li> */}
-                    </ul>
-                </div>
+                <Carousel plants={plants}/>
             </main>
             <footer>
-                <div className="navigation">
+                {/* <div className="navigation">
                     <ul>
                         <li className="navigation-item">
                             <button className="btn-active navigation-item-button">
@@ -138,7 +86,8 @@ function App() {
                             <p>Profile</p>
                         </li>
                     </ul>
-                </div>
+                </div> */}
+                <NavigationBar items={navItems}/>
             </footer>
         </>
     )

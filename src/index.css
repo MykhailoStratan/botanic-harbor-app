@@ -19,6 +19,10 @@
   flex-direction: column;
   justify-content: space-between; */
 
+  --carousel-card-width: 13rem;
+  --carousel-gap-width: 3rem;
+  /* --main-text-color: #fff; */
+
 }
 
 * {

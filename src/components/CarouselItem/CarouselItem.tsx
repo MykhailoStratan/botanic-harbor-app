@@ -1,29 +1,33 @@
-import React from 'react';
+import { PlantProduct } from '../../types/plant-product.type';
 import './CarouselItem.css';
 
-interface PlantProduct {
-    name: string;
-    imagePath: string;
-    price: string;
-    rating: number;
-    favourite: boolean;
-    hint: string;
-    type: string;
-    preferences: {
-        humidity: string;
-        temperature: number;
-        light: string;
-        watering: string;
-    };
+import { CSSProperties, FC, MouseEventHandler } from 'react';
+
+interface CarouselItemProps {
+    plant: PlantProduct;
+    style?: CSSProperties;
+    onClick: MouseEventHandler<HTMLDivElement>;
 }
 
-const CarouselItem: React.FC<PlantProduct> = (props) => {
-    const { name, imagePath, price, rating, favourite, hint } = props;
+const CarouselItem: FC<CarouselItemProps> = ({plant, style, onClick}) => {
+    const { name, imagePath, price, rating, favourite, hint } = plant;
+
+    // const [isCentered, setIsFavourite] = useState<boolean>(favourite);
+
+    // function switchFavourite() {
+    //     setIsFavourite(!isFavourite);
+    //     plant.favourite = !plant.favourite;
+    // }
  
     return (
-        <li className="content-carousel-item">
-            <div className="carousel-item-card">
-                <button className="carousel-item-save"><img src={favourite ? "/heart-filled-icon.svg" : "/heart-empty-icon.svg"} alt="" /></button>
+        <li className='content-carousel-item' style={{...style}}>
+            <div className="carousel-item-card" onClick={onClick}>
+                <button 
+                    className="carousel-item-save"><img 
+                        src={favourite ? "/heart-filled-icon.svg" : "/heart-empty-icon.svg"}
+                        style={!favourite ? {transform: `rotate(-5deg)`} : {transform: `translate(0, 0.05rem)`}}
+                        alt="" />
+                </button>
                 <div className="carousel-item-image">
                     <img src={`/plants/${imagePath}`} alt={name} />
                 </div>

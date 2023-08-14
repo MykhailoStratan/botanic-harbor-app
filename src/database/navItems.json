@@ -1,0 +1,23 @@
+[
+    {
+      "imagePath": "/home-icon.svg",
+      "description": "Home",
+      "showDescription": true
+    },
+    {
+      "imagePath": "/heart-big-icon.svg",
+      "description": "Favorites",
+      "showDescription": false
+    },
+    {
+      "imagePath": "/cart-icon.svg",
+      "description": "Cart",
+      "showDescription": false
+    },
+    {
+      "imagePath": "/profile-icon.svg",
+      "description": "Profile",
+      "showDescription": false
+    }
+  ]
+  

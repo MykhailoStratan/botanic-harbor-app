@@ -17,11 +17,18 @@
     line-height: normal;
 }
 
+
+/* .item-center {
+    position: absolute;
+    left: 0;
+    transform: translate(%, 0);
+} */
+
 .carousel-item-card {
     display: flex;
     align-items: center;
     position: relative;
-    width: 13rem;
+    width: var(--carousel-card-width);
     height: 17rem;
     border-radius: 1rem;
     background: #f3f3f3;
@@ -33,6 +40,16 @@
     width: 80%;
     height: auto;
     margin: 0 auto;
+
+    -webkit-user-select: none; /* Chrome/Safari */ 
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* The rule below is not implemented in browsers yet */
+    -o-user-select: none;
+
+    /* The rule below is implemented in most browsers by now */
+    user-select: none;
 }
 
 .carousel-item-image img {
