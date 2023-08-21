@@ -1,0 +1,45 @@
+.utilities {
+    display: flex;
+    background: #fff;
+    height: 3.4rem;
+    padding: 0.2rem;
+    /* border-radius: 2.625rem 0rem 0rem 2.625rem; */
+    box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.16);
+    /* margin: 1.5rem; */
+}
+
+.utilities-notifications,
+.utilities-search {
+    position: absolute;
+    margin-bottom: 1.5rem;
+    right: -10rem;
+    width: 15rem;
+    border-radius: 1.625rem 0rem 0rem 1.625rem;
+    transition: height ease-in-out 0.5s, right linear 1s;
+}
+
+/* .utilities-notifications:hover, */
+.utilities-search:hover {
+    /* background-color:red; */
+    right: 0;    
+}
+
+.utilities-search {
+    top: 4.5rem;
+    color: black;
+}
+
+/* .utilities-notifications:hover {
+    height: 20rem;
+    z-index: 20;
+} */
+
+.utilities-notifications-active {
+    position: absolute;
+    right: 0;
+    width: 15rem;
+    height: 20rem;
+    z-index: 20;
+    transition: right ease-in-out 0.5s, height linear 1s;
+    border-radius: 1.625rem 0rem 0rem 1.625rem;
+}

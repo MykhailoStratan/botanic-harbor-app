@@ -46,6 +46,13 @@ button {
     border: none;
 }
 
+.header-utilities-container {
+    position: fixed;
+    top: 3rem;
+    right: 0;
+    z-index: 10;
+}
+
 .btn-active {
     display: flex;
     align-items: center;
@@ -106,32 +113,6 @@ button {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.header-utilities-container {
-    position: fixed;
-    top: 3rem;
-    right: -9rem;
-    z-index: 10;
-}
-
-.utilities {
-    display: flex;
-    background: #fff;
-    height: 3.4rem;
-    padding: 0.2rem;
-    border-radius: 2.625rem 0rem 0rem 2.625rem;
-    box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.16);
-    /* margin: 1.5rem; */
-}
-
-.utilities-notifications,
-.utilities-search {
-    margin-bottom: 1.5rem;
-}
-
-.utilities-search {
-    top: 4.5rem;
 }
 
 .user-logo {
@@ -212,3 +193,15 @@ button {
 /* @media screen and (min-width: 840px) {
     position: absolute;
 } */
+
+@media screen and (min-width: 521px) {
+    .header-slogan-img-container {
+        /* position: absolute;
+      right: 0; */
+        transform: translate(0, 0%);
+    }
+
+    .menu-filter ul {
+        justify-content: center;
+    }
+}
