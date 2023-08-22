@@ -36,6 +36,10 @@ menu {
 }
 
 footer {
+    display: block;
+    background: #fff;
+    border-radius: 2.625rem 2.625rem 0rem 0rem;
+    box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.28);
     position: fixed;
     bottom: 0;
 }
@@ -44,6 +48,30 @@ button {
     padding: 0;
     margin: 0;
     border: none;
+}
+
+h3 {
+    margin: 0;
+    padding-top: 0.87rem;
+    color: #2b2b2b;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p {
+    margin: 0;
+    color: #a3a3a3;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header-utilities-container {
@@ -61,6 +89,29 @@ button {
     background: #e1f3da;
     width: 3rem;
     height: 3rem;
+}
+
+.btn-details-header {
+    position: absolute;
+    top: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.25rem;
+    background: #fff;
+    box-shadow: 0px 10px 250px -5px rgba(0, 0, 0, 0.10);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-arrow-back {
+    left: 1.25rem;
+    background-image: url("/arrow-left-icon.svg");
+}
+
+.btn-favourite {
+    right: 1.25rem;
+    background-image: url("/public/heart-filled-icon.svg");
+    background-size: 65%;
 }
 
 .rating-image {
@@ -187,6 +238,68 @@ button {
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 3.75rem;
+}
+
+.footer-description {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.75rem 2.8rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2em;
+    width: 100vw;
+    text-align: justify;
+}
+
+.footer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-bottom: 2.4rem;
+}
+
+.plant-tip-group {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.btn-add-to-cart {
+    display: inline-flex;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 2.8125rem;
+    border: 1px solid #E1F3DA;
+    background: #FFF;
+    color: #2A2A2A;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-add-to-cart img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.buy-now {
+    display: inline-flex;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.8125rem 3.3125rem 0.875rem 3.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.8125rem;
+    background: #274E33;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 

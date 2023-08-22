@@ -18,6 +18,10 @@ const CarouselItem: FC<CarouselItemProps> = ({plant, style, onClick}) => {
     //     setIsFavourite(!isFavourite);
     //     plant.favourite = !plant.favourite;
     // }
+
+    // function reviewDetails() {
+        
+    // }
  
     return (
         <li className='content-carousel-item' style={{...style}}>

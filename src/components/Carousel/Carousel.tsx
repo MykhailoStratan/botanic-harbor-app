@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { PlantProduct } from '../../types/plant-product.type';
 import CarouselItem from '../CarouselItem/CarouselItem';
 import './Carousel.css';
@@ -40,9 +41,11 @@ const Carousel: FC<{ plants: PlantProduct[] }> = ({ plants }) => {
                                 plant={plants[plants.length - 1]} 
                                 style={{ transform: leftCardTransform}} 
                                 onClick={slideLeft}/>
-                            <CarouselItem 
-                                plant={plants[currentIndex]} 
-                                onClick={openPreview}/>
+                            <Link to="/details">
+                                <CarouselItem 
+                                    plant={plants[currentIndex]} 
+                                    onClick={openPreview}/>
+                            </Link>
                             <CarouselItem 
                                 plant={plants[currentIndex + 1]} 
                                 style={{ transform: rightCardTransform }} 
@@ -54,9 +57,11 @@ const Carousel: FC<{ plants: PlantProduct[] }> = ({ plants }) => {
                                     plant={plants[currentIndex - 1]} 
                                     style={{ transform: leftCardTransform}} 
                                     onClick={slideLeft}/>
-                                <CarouselItem 
-                                    plant={plants[currentIndex]} 
-                                    onClick={openPreview}/>
+                                <Link to="/details">
+                                    <CarouselItem 
+                                        plant={plants[currentIndex]} 
+                                        onClick={openPreview}/>
+                                </Link>
                                 <CarouselItem 
                                     plant={plants[0]} 
                                     style={{ transform: rightCardTransform}} 
@@ -68,9 +73,11 @@ const Carousel: FC<{ plants: PlantProduct[] }> = ({ plants }) => {
                                     plant={plants[currentIndex - 1]} 
                                     style={{ transform: leftCardTransform}} 
                                     onClick={slideLeft}/>
-                                <CarouselItem 
-                                    plant={plants[currentIndex]} 
-                                    onClick={openPreview}/>
+                                <Link to="/details">
+                                    <CarouselItem 
+                                        plant={plants[currentIndex]} 
+                                        onClick={openPreview}/>
+                                </Link>
                                 <CarouselItem 
                                     plant={plants[currentIndex + 1]} 
                                     style={{ transform: rightCardTransform}} 
