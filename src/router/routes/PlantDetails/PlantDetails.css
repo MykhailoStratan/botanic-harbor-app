@@ -1,0 +1,162 @@
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.details-footer {
+    position: relative;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+}
+
+.details-main {
+    display: flex;
+    height: 40%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+ul.plant-img-column {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+ul.plant-img-column li {
+    height: 3rem;
+}
+
+.plant-img-small {
+    width: 3rem;
+    border-radius: 0.5rem;
+    background: #f3f3f3;
+    box-shadow: 0px 10px 50px -5px rgba(0, 0, 0, 0.15);
+}
+
+.plant-img-large {
+    width: 16rem;
+}
+
+.details-item-rating {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.btn-details-header {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.25rem;
+    background: #fff;
+    box-shadow: 0px 10px 250px -5px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-arrow-back {
+    left: 1.25rem;
+    background-image: url("/arrow-left-icon.svg");
+}
+
+.btn-favourite {
+    right: 1.25rem;
+    background-image: url("/heart-filled-icon.svg");
+    background-size: 65%;
+}
+
+.footer-description {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.3rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2em;
+    width: 100vw;
+    text-align: justify;
+}
+
+.footer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    padding-bottom: 2.4rem;
+}
+
+.plant-tip-group {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.plant-tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.planit-tip-description {
+    text-align: center;
+}
+
+.plant-description {}
+
+.btn-add-to-cart {
+    display: inline-flex;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.75rem 1.5rem 0.75rem 1.5625rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 2.8125rem;
+    border: 1px solid #e1f3da;
+    background: #fff;
+    color: #2a2a2a;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-add-to-cart img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.buy-now {
+    display: inline-flex;
+    width: 10rem;
+    height: 3rem;
+    padding: 0.8125rem 3.3125rem 0.875rem 3.25rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.8125rem;
+    background: #274e33;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
