@@ -2,22 +2,26 @@
     {
       "imagePath": "/home-icon.svg",
       "description": "Home",
-      "showDescription": true
+      "showDescription": true,
+      "route": "/"
     },
     {
       "imagePath": "/heart-big-icon.svg",
       "description": "Favorites",
-      "showDescription": false
+      "showDescription": false,
+      "route": "/favourites"
     },
     {
       "imagePath": "/cart-icon.svg",
       "description": "Cart",
-      "showDescription": false
+      "showDescription": false,
+      "route": "/cart"
     },
     {
       "imagePath": "/profile-icon.svg",
       "description": "Profile",
-      "showDescription": false
+      "showDescription": false,
+      "route": "/user"
     }
   ]
   

@@ -63,6 +63,26 @@ a {
     color: inherit;
 }
 
+.btn-header {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.25rem;
+    background: #fff;
+    box-shadow: 0px 10px 250px -5px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-arrow-back {
+    left: 1.25rem;
+    background-image: url("/arrow-left-icon.svg");
+}
+
+.btn-favourite {
+    right: 1.25rem;
+    background-image: url("/heart-filled-icon.svg");
+    background-size: 65%;
+}
 
 
 

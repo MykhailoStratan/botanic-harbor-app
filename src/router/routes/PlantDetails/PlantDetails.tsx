@@ -6,10 +6,10 @@ export default function PlantDetails() {
         <div className="details-wrapper">
             <header className="details-header">
                 <Link to="/">
-                    <button className="btn-details-header btn-arrow-back"></button>
+                    <button className="btn-header btn-arrow-back"></button>
                 </Link>
                 <h4>Plant Details</h4>
-                <button className="btn-details-header btn-favourite"></button>
+                <button className="btn-header btn-favourite"></button>
             </header>
             <main className="details-main">
                 <ul className="plant-img-column">

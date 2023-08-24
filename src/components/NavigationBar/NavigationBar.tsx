@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { NavigationItem } from '../../types/navigation-item.type';
 import './NavigationBar.css';
 
@@ -16,9 +17,9 @@ const NavigationBar: FC<{ items: NavigationItem[] }> = ({ items }) => {
             <ul>
                 {items.map((item, index) => {
                     return <li className="navigation-item" key={index+Date()} onClick={(event) => onSetActiveNavItem(event, item.description)}>
-                        <a href="" className="navigation-item-link">
+                        <Link to={item.route} >
                             <img src={item.imagePath} alt={item.description} className="navigation-item-icon" />
-                        </a>
+                        </Link>
                         <p className={avtiveNavItem === item.description ? `navigation-item-description-shown` : `navigation-item-description-hidden`}>{item.description}</p>
                     </li>
                 })}
