@@ -9,15 +9,6 @@
     position: relative;
 }
 
-.details-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-
 h4 {
     margin: 0;
 }
@@ -64,8 +55,6 @@ ul.plant-img-column li {
     padding-bottom: 1rem;
 }
 
-
-
 .footer-description {
     display: flex;
     flex-wrap: wrap;
@@ -85,14 +74,6 @@ ul.plant-img-column li {
     line-height: normal;
 }
 
-.footer-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.25rem;
-    padding-bottom: 2.4rem;
-}
-
 .plant-tip-group {
     display: flex;
     gap: 1.25rem;
@@ -107,6 +88,11 @@ ul.plant-img-column li {
 
 .planit-tip-description {
     text-align: center;
+
+    color: #274E33;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 500;
 }
 
 .plant-description {}

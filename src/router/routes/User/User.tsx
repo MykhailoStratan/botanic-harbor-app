@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function User() {
     return (
         <div className="user-wrapper">
-            <header className="user-header">
+            <header className="common-header">
                 <Link to="/">
                     <button className="btn-header btn-arrow-back"></button>
                 </Link>

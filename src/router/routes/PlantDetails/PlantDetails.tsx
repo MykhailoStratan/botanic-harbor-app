@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import './PlantDetails.css';
+import NavigationBar from "../../../components/NavigationBar/NavigationBar";
+import navItems from "../../../database/navItems.json";
 
 export default function PlantDetails() {
     return (
         <div className="details-wrapper">
-            <header className="details-header">
+            <header className="common-header">
                 <Link to="/">
                     <button className="btn-header btn-arrow-back"></button>
                 </Link>
@@ -46,6 +48,7 @@ export default function PlantDetails() {
                         <img src="/cart-icon.svg" alt="" className="card-img" />Add to cart</button>
                     <button className="buy-now">Buy now</button>
                 </div>
+                <NavigationBar items={navItems} />
             </footer>
         </div>
     );

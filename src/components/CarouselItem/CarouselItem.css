@@ -91,3 +91,7 @@
     width: 0.625rem;
     height: 0.625rem;
 }
+
+.description-plant-name {
+    text-align: center;
+}
